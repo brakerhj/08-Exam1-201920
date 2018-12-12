@@ -8,6 +8,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 import math
 
+
 def main():
     """ Calls the   TEST   functions in this module. """
     test_factor_sum()
@@ -47,31 +48,31 @@ def test_factor_sum():
     ###########################################################################
     # Test 1:
     expected = 11
-    actual = 28
+    actual = factor_sum(28)
     print()
     print('Expected: ', expected)
     print('Actual: ', actual)
     # Test 2:
     expected = 11
-    actual = 28
+    actual = factor_sum(28)
     print()
     print('Expected: ', expected)
     print('Actual: ', actual)
     # Test 3:
     expected = 11
-    actual = 28
+    actual = factor_sum(28)
     print()
     print('Expected: ', expected)
     print('Actual: ', actual)
     # Test 4:
     expected = 11
-    actual = 28
+    actual = factor_sum(28)
     print()
     print('Expected: ', expected)
     print('Actual: ', actual)
     # Test 5:
     expected = 11
-    actual = 28
+    actual = factor_sum(28)
     print()
     print('Expected: ', expected)
     print('Actual: ', actual)
@@ -111,4 +112,6 @@ def factor_sum(n):
     ###########################################################################
     total = 0
     for k in range(n):
-        total = total + math
+        if n % k == 0:
+            total = total + k
+    return total

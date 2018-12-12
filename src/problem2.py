@@ -111,4 +111,4 @@ def factor_sum(n):
     ###########################################################################
     total = 0
     for k in range(n):
-        total = total
+        total = total + math
